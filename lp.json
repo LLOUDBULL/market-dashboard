@@ -1,64 +1,64 @@
 {
-  "updated": "2026-11-12T16:54:12-08:00",
+  "updated": "2026-11-12T17:18:05-08:00",
   "wallets": [
     {
       "label": "0xae2a…d39a",
-      "total": 527.05,
-      "change24h": -19.96,
-      "change24hPct": -3.6,
+      "total": 527.32,
+      "change24h": -17.57,
+      "change24hPct": -3.2,
       "positions": [
         {
           "pair": "WETH/AERO",
           "inRange": true,
-          "value": 295.3,
+          "value": 295.4,
           "fees": 0.33,
-          "change24h": -11.77,
-          "change24hPct": -3.8,
+          "change24h": -10.68,
+          "change24hPct": -3.5,
           "note": ""
         },
         {
           "pair": "BNKR/WETH",
           "inRange": true,
-          "value": 129.28,
+          "value": 129.32,
           "fees": 4.51,
-          "change24h": -6.09,
-          "change24hPct": -4.4,
+          "change24h": -5.47,
+          "change24hPct": -3.9,
           "note": ""
         },
         {
           "pair": "WETH/B3",
           "inRange": true,
-          "value": 29.04,
+          "value": 29.03,
           "fees": 0,
-          "change24h": -0.99,
-          "change24hPct": -3.3,
+          "change24h": -0.7,
+          "change24hPct": -2.4,
           "note": "near edge, 2.2% from upper"
         },
         {
           "pair": "WETH/BRETT",
           "inRange": false,
-          "value": 24.22,
+          "value": 24.29,
           "fees": 0,
-          "change24h": -0.36,
-          "change24hPct": -1.4,
+          "change24h": -0.09,
+          "change24hPct": -0.4,
           "note": ""
         },
         {
           "pair": "VIRTUAL/COOKIE",
           "inRange": false,
-          "value": 14.0,
+          "value": 14.04,
           "fees": 0,
-          "change24h": -0.33,
-          "change24hPct": -2.3,
+          "change24h": -0.12,
+          "change24hPct": -0.8,
           "note": ""
         },
         {
           "pair": "VIRTUAL/NYKO",
           "inRange": true,
-          "value": 3.68,
+          "value": 3.69,
           "fees": 0,
-          "change24h": -0.03,
-          "change24hPct": -0.7,
+          "change24h": 0.01,
+          "change24hPct": 0.2,
           "note": ""
         },
         {
@@ -66,8 +66,8 @@
           "inRange": false,
           "value": 10.2,
           "fees": 1.58,
-          "change24h": 0.44,
-          "change24hPct": 3.9,
+          "change24h": 0.31,
+          "change24hPct": 2.7,
           "note": ""
         },
         {
@@ -84,8 +84,8 @@
           "inRange": false,
           "value": 2.45,
           "fees": 0,
-          "change24h": -0.07,
-          "change24hPct": -2.6,
+          "change24h": -0.06,
+          "change24hPct": -2.3,
           "note": ""
         },
         {
@@ -94,7 +94,7 @@
           "value": 2.38,
           "fees": 0,
           "change24h": -0.02,
-          "change24hPct": -1.0,
+          "change24hPct": -0.7,
           "note": ""
         },
         {
@@ -110,43 +110,43 @@
     },
     {
       "label": "0x355b…b53d",
-      "total": 43.77,
-      "change24h": -1.04,
-      "change24hPct": -2.3,
+      "total": 43.89,
+      "change24h": -0.38,
+      "change24hPct": -0.9,
       "positions": [
         {
           "pair": "WETH/COOKIE",
           "inRange": false,
-          "value": 43.34,
+          "value": 43.46,
           "fees": 0,
-          "change24h": -1.03,
-          "change24hPct": -2.3,
+          "change24h": -0.37,
+          "change24hPct": -0.8,
           "note": ""
         }
       ]
     },
     {
       "label": "0x75c6…56eb",
-      "total": 39.74,
-      "change24h": -1.86,
-      "change24hPct": -4.5,
+      "total": 39.78,
+      "change24h": -1.55,
+      "change24hPct": -3.7,
       "positions": [
         {
           "pair": "WETH/VEIL",
           "inRange": true,
           "value": 14.75,
-          "fees": 5.06,
-          "change24h": -1.41,
-          "change24hPct": -6.7,
+          "fees": 5.05,
+          "change24h": -1.38,
+          "change24hPct": -6.5,
           "note": ""
         },
         {
           "pair": "WETH/COOKIE",
           "inRange": false,
-          "value": 18.2,
+          "value": 18.25,
           "fees": 0,
-          "change24h": -0.43,
-          "change24hPct": -2.3,
+          "change24h": -0.15,
+          "change24hPct": -0.8,
           "note": ""
         }
       ]
