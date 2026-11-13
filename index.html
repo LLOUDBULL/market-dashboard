@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Brief</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; background: #fafafa; color: #111; line-height: 1.4; }
+  h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .meta { color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; }
+  .section { background: white; border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  h2 { font-size: 1.1rem; margin: 0 0 0.75rem; }
+  .asset { margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid #eee; }
+  .asset:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .ticker { font-weight: 700; font-size: 1.05rem; }
+  .price { font-weight: 600; }
+  .up { color: #0a7f3f; }
+  .down { color: #c41e3a; }
+  .line { font-size: 0.95rem; margin: 0.2rem 0; }
+  .label { color: #555; }
+  .takeaways li { margin: 0.3rem 0; }
+</style>
+</head>
+<body>
+<h1>Daily Market Brief</h1>
+<div class="meta" id="meta">Loading…</div>
+
+<div class="section">
+  <h2>Quick Snapshot</h2>
+  <div id="snapshot"></div>
+</div>
+
+<div class="section">
+  <h2>Equities</h2>
+  <div id="equities"></div>
+</div>
+
+<div class="section">
+  <h2>Crypto</h2>
+  <div id="crypto"></div>
+</div>
+
+<div class="section">
+  <h2>Key Takeaways</h2>
+  <ul class="takeaways" id="takeaways"></ul>
+</div>
+
+<script>
+async function load() {
+  try {
+    const res = await fetch('data.json?t=' + Date.now());
+    const d = await res.json();
+    document.getElementById('meta').textContent = d.date + ' · ' + (d.mood || '').toUpperCase();
+
+    const snap = document.getElementById('snapshot');
+    snap.innerHTML = `
+      <div class="line"><strong>Mood:</strong> ${d.mood || '—'}</div>
+      <div class="line"><strong>SPX</strong> ${d.stocks.SPX?.price ?? '—'} <span class="${(d.stocks.SPX?.change||0)>=0?'up':'down'}">${(d.stocks.SPX?.change||0)>=0?'+':''}${d.stocks.SPX?.change ?? ''}</span></div>
+      <div class="line"><strong>SPY</strong> $${d.stocks.SPY?.price ?? '—'} <span class="${(d.stocks.SPY?.change||0)>=0?'up':'down'}">${(d.stocks.SPY?.change||0)>=0?'+':''}${d.stocks.SPY?.change ?? ''}%</span></div>
+      <div class="line"><strong>QQQ</strong> $${d.stocks.QQQ?.price ?? '—'} <span class="${(d.stocks.QQQ?.change||0)>=0?'up':'down'}">${(d.stocks.QQQ?.change||0)>=0?'+':''}${d.stocks.QQQ?.change ?? ''}%</span></div>
+      <div class="line"><strong>VIX</strong> ${d.stocks.VIX?.price ?? '—'} <span class="${(d.stocks.VIX?.change||0)>=0?'up':'down'}">${(d.stocks.VIX?.change||0)>=0?'+':''}${d.stocks.VIX?.change ?? ''}%</span></div>
+      <div class="line" style="margin-top:0.5rem"><strong>Crypto total</strong> $${d.crypto.total_mcap ?? '—'}T · TOTAL3 $${d.crypto.TOTAL3 ?? '—'}T</div>
+      <div class="line">BTC.D ${d.crypto['BTC.D'] ?? '—'}% · USDT.D ${d.crypto['USDT.D'] ?? '—'}% · USDC.D ${d.crypto['USDC.D'] ?? '—'}%</div>
+    `;
+
+    function assetHtml(ticker, a, isCrypto = false) {
+      if (!a) return '';
+      const ch = a.change ?? 0;
+      const cls = ch >= 0 ? 'up' : 'down';
+      const vol = isCrypto
+        ? `total $${a.volume_total ?? '—'}B | on-chain $${a.volume_onchain ?? '—'}B | perps $${a.volume_perps ?? '—'}B`
+        : `total $${((a.volume || 0)/1e9).toFixed(2)}B`;
+      return `
+        <div class="asset">
+          <div class="ticker">${ticker} <span class="price">$${a.price ?? '—'}</span> <span class="${cls}">(${ch>=0?'+':''}${ch}%)</span></div>
+          <div class="line"><span class="label">Driver:</span> ${a.driver || '—'}</div>
+          <div class="line"><span class="label">Sentiment:</span> ${a.sentiment || '—'}</div>
+          <div class="line"><span class="label">Volume:</span> ${vol}</div>
+          <div class="line"><span class="label">RSI:</span> prev ${a.rsi_prev ?? '—'} | current ${a.rsi_current ?? '—'}</div>
+        </div>`;
+    }
+
+    document.getElementById('equities').innerHTML =
+      assetHtml('TSLA', d.stocks.TSLA) +
+      assetHtml('NVDA', d.stocks.NVDA);
+
+    document.getElementById('crypto').innerHTML =
+      assetHtml('BTC', d.crypto.BTC, true) +
+      assetHtml('ETH', d.crypto.ETH, true) +
+      assetHtml('SOL', d.crypto.SOL, true) +
+      assetHtml('SUI', d.crypto.SUI, true) +
+      assetHtml('SEI', d.crypto.SEI, true);
+
+    const ul = document.getElementById('takeaways');
+    ul.innerHTML = (d.takeaways || []).map(t => `<li>${t}</li>`).join('');
+  } catch (e) {
+    document.getElementById('meta').textContent = 'Failed to load data';
+  }
+}
+load();
+</script>
+</body>
+</html>
