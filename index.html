@@ -102,6 +102,30 @@
   .takeaways { margin: 0; padding-left: 1.1rem; }
   .takeaways li { margin: 0.3rem 0; font-size: 0.92rem; }
   .pos { margin: 0.3rem 0 0.3rem 0.6rem; font-size: 0.86rem; }
+  .wallet-total { font-weight: 700; font-size: 1.05rem; margin-right: 0.6rem; }
+  .lp-table-wrap { overflow-x: auto; }
+  .lp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.86rem;
+    margin: 0.25rem 0 0.1rem;
+  }
+  .lp-table th, .lp-table td {
+    text-align: left;
+    padding: 0.28rem 0.55rem 0.28rem 0;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  .lp-table td.note { white-space: normal; color: var(--muted); }
+  .lp-table th {
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .lp-table .num { text-align: right; font-variant-numeric: tabular-nums; }
   @media (max-width: 820px) {
     .main-grid { grid-template-columns: 1fr; }
     .snapshot-grid { grid-template-columns: 1fr; }
@@ -143,7 +167,7 @@
     </div>
   </div>
 
-  <div class="section" id="lpSection">
+  <div class="section" id="lpSection" hidden>
     <h2>LP Positions <span id="lpUpdated" style="font-weight:400;text-transform:none;letter-spacing:0;"></span></h2>
     <div id="lp"></div>
   </div>
@@ -169,32 +193,85 @@ async function loadHistoryIndex() {
 
 dateSelect.addEventListener('change', () => load(dateSelect.value));
 
+function fmtUsd(n, signed = false) {
+  if (n === null || n === undefined || Number.isNaN(Number(n))) return '—';
+  const v = Number(n);
+  const core = '$' + Math.abs(v).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  if (signed) {
+    if (v > 0) return '+' + core;
+    if (v < 0) return '-' + core;
+    return core;
+  }
+  return (v < 0 ? '-' : '') + core;
+}
+
+function fmtPct(n) {
+  if (n === null || n === undefined || Number.isNaN(Number(n))) return '—';
+  const v = Number(n);
+  const body = Math.abs(v).toFixed(1) + '%';
+  if (v > 0) return '+' + body;
+  if (v < 0) return '-' + body;
+  return body;
+}
+
+function changeClass(n) {
+  if (n === null || n === undefined || Number.isNaN(Number(n))) return '';
+  return Number(n) >= 0 ? 'up' : 'down';
+}
+
 async function loadLP() {
+  const section = document.getElementById('lpSection');
   try {
     const res = await fetch('lp.json?t=' + Date.now());
-    if (!res.ok) return;
+    if (!res.ok) { section.hidden = true; return; }
     const lp = await res.json();
     const el = document.getElementById('lp');
     document.getElementById('lpUpdated').textContent = lp.updated ? `· ${lp.updated}` : '';
     el.innerHTML = (lp.wallets || []).map(w => {
-      const ch = w.change24hPct ?? 0;
-      const cls = ch >= 0 ? 'up' : 'down';
-      const positions = (w.positions || []).map(p => {
-        const pcls = (p.change24hPct ?? 0) >= 0 ? 'up' : 'down';
-        const range = p.inRange ? '🟢' : '🔴';
-        return `<div class="pos">${range} ${p.pair} $${p.value ?? '—'} ${p.fees ? `(+$${p.fees} fees)` : ''} <span class="${pcls}">${(p.change24hPct||0)>=0?'+':''}${p.change24hPct ?? ''}%</span>${p.note ? ` · ${p.note}` : ''}</div>`;
+      const rows = (w.positions || []).map(p => {
+        const range = p.inRange ? '🟢 in range' : '🔴 out of range';
+        const chg = `<span class="${changeClass(p.change24h ?? p.change24hPct)}">${fmtUsd(p.change24h, true)} (${fmtPct(p.change24hPct)})</span>`;
+        const note = p.note ? p.note : '';
+        return `<tr>
+          <td>${p.pair || '—'}</td>
+          <td>${range}</td>
+          <td class="num">${fmtUsd(p.value)}</td>
+          <td class="num">${fmtUsd(p.fees)}</td>
+          <td class="num">${chg}</td>
+          <td class="note">${note}</td>
+        </tr>`;
       }).join('');
+      const table = rows ? `
+        <div class="lp-table-wrap">
+          <table class="lp-table">
+            <thead>
+              <tr>
+                <th>Pair</th>
+                <th>Range</th>
+                <th class="num">Value</th>
+                <th class="num">Fees</th>
+                <th class="num">24h</th>
+                <th>Note</th>
+              </tr>
+            </thead>
+            <tbody>${rows}</tbody>
+          </table>
+        </div>` : '';
       return `
         <div class="wallet">
           <div class="wallet-header">
             <span class="wallet-label">${w.label}</span>
-            <span class="change ${cls}">$${w.total ?? '—'} (${ch>=0?'+':''}${ch}%)</span>
+            <span>
+              <span class="wallet-total">${fmtUsd(w.total)}</span>
+              <span class="change ${changeClass(w.change24h ?? w.change24hPct)}">${fmtUsd(w.change24h, true)} (${fmtPct(w.change24hPct)})</span>
+            </span>
           </div>
-          ${positions}
+          ${table}
         </div>`;
     }).join('');
+    section.hidden = false;
   } catch (e) {
-    document.getElementById('lp').innerHTML = '<div class="line">No LP data yet</div>';
+    section.hidden = true;
   }
 }
 
