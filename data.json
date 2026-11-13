@@ -1,27 +1,27 @@
 {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "mood": "risk-off",
   "stocks": {
-    "SPX": {"price": 7592, "change": -0.35},
-    "SPY": {"price": 757.12, "change": -0.35},
-    "QQQ": {"price": 688, "change": -0.32},
-    "VIX": {"price": 18.70, "change": 6.9},
-    "TSLA": {"price": 397.45, "change": 1.69, "rsi_prev": 55, "rsi_current": 58, "volume": 80000000, "sentiment": "Positive", "driver": "SpaceX-Tesla merger talks"},
-    "NVDA": {"price": 166.19, "change": -4.34, "rsi_prev": 62, "rsi_current": 45, "volume": 730000000, "sentiment": "Negative", "driver": "CEO resignation scandal"}
+    "SPX": {"price": 7530, "change": -0.8},
+    "SPY": {"price": 752.5, "change": -0.6},
+    "QQQ": {"price": 678, "change": -1.4},
+    "VIX": {"price": 19.2, "change": 2.7},
+    "TSLA": {"price": 391, "change": -1.6, "rsi_prev": 56, "rsi_current": 54, "volume": 10000000000, "sentiment": "Neutral", "driver": "Mild pullback after recent strength"},
+    "NVDA": {"price": 161.5, "change": -2.8, "rsi_prev": 26, "rsi_current": 26, "volume": 45000000000, "sentiment": "Negative", "driver": "Continued pressure after CEO exit"}
   },
   "crypto": {
-    "total_mcap": 2.41,
-    "TOTAL3": 0.731,
-    "BTC.D": 59.5,
-    "USDT.D": 7.3,
-    "USDC.D": 2.9,
-    "OTHERS": 30.3,
-    "ETHBTC": 0.0282,
-    "BTC": {"price": 71500, "change": -4, "rsi_prev": 48, "rsi_current": 42, "volume_total": 35, "volume_onchain": 12, "volume_perps": 23, "sentiment": "Negative", "driver": "Broad risk-off"},
-    "ETH": {"price": 2015, "change": -3, "rsi_prev": 46, "rsi_current": 41, "volume_total": 12, "volume_onchain": 4, "volume_perps": 8, "sentiment": "Negative", "driver": "Risk-off"},
-    "SOL": {"price": 81.40, "change": -3.8, "rsi_prev": 44, "rsi_current": 39, "volume_total": 3.2, "volume_onchain": 1.1, "volume_perps": 2.1, "sentiment": "Cautious", "driver": "ETF outflows + market"},
-    "SUI": {"price": 0.80, "change": -4, "rsi_prev": 42, "rsi_current": 37, "volume_total": 0.4, "volume_onchain": 0.15, "volume_perps": 0.25, "sentiment": "Negative", "driver": "Ecosystem pressure"},
-    "SEI": {"price": 0.043, "change": -2, "rsi_prev": 51, "rsi_current": 49, "volume_total": 0.08, "volume_onchain": 0.03, "volume_perps": 0.05, "sentiment": "Mixed", "driver": "Fundamentals vs market"}
+    "total_mcap": 2.34,
+    "TOTAL3": 0.725,
+    "BTC.D": 59.0,
+    "USDT.D": 7.5,
+    "USDC.D": 2.95,
+    "OTHERS": 31.0,
+    "ETHBTC": 0.0283,
+    "BTC": {"price": 68900, "change": -3.6, "rsi_prev": 32, "rsi_current": 25, "volume_total": 43, "volume_onchain": 15, "volume_perps": 28, "sentiment": "Negative", "driver": "Broad risk-off selling"},
+    "ETH": {"price": 1950, "change": -3.1, "rsi_prev": 30, "rsi_current": 25, "volume_total": 15, "volume_onchain": 5, "volume_perps": 10, "sentiment": "Negative", "driver": "Risk-off with BTC"},
+    "SOL": {"price": 80, "change": -1.8, "rsi_prev": 22, "rsi_current": 20, "volume_total": 3.3, "volume_onchain": 1.1, "volume_perps": 2.2, "sentiment": "Negative", "driver": "Alt weakness"},
+    "SUI": {"price": 0.81, "change": 1.0, "rsi_prev": 36, "rsi_current": 36, "volume_total": 0.38, "volume_onchain": 0.13, "volume_perps": 0.25, "sentiment": "Neutral", "driver": "Relative resilience"},
+    "SEI": {"price": 0.0434, "change": 1.5, "rsi_prev": 40, "rsi_current": 36, "volume_total": 0.02, "volume_onchain": 0.008, "volume_perps": 0.012, "sentiment": "Neutral", "driver": "Low volume bounce"}
   },
-  "takeaways": ["NVDA leadership shock dominated the session", "TSLA relative strength on merger headlines", "Crypto sold off harder than equities"]
+  "takeaways": ["NVDA continued heavy selling after CEO exit with elevated volume and oversold RSI", "Crypto in extreme fear with BTC/ETH RSI deeply oversold", "Tech-led risk-off session; VIX up modestly"]
 }
