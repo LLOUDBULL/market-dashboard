@@ -1,27 +1,27 @@
 {
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "mood": "risk-off",
   "stocks": {
-    "SPX": {"price": 7561.67, "change": -0.40},
-    "SPY": {"price": 754.37, "change": -0.36},
-    "QQQ": {"price": 679.89, "change": -1.20},
-    "VIX": {"price": 19.30, "change": 3.21},
-    "TSLA": {"price": 390.22, "change": -1.82, "rsi_prev": 56.5, "rsi_current": 53.5, "volume": 12600000000, "sentiment": "Neutral", "driver": "Cybercab orders and merger talks offset by tech risk-off"},
-    "NVDA": {"price": 162.85, "change": -2.01, "rsi_prev": 26.0, "rsi_current": 24.9, "volume": 59200000000, "sentiment": "Negative", "driver": "Heavy selling into Nov 17 earnings post-CEO exit; volume 1.85x"}
+    "SPX": {"price": 7425, "change": -1.8},
+    "SPY": {"price": 740, "change": -1.9},
+    "QQQ": {"price": 663, "change": -2.5},
+    "VIX": {"price": 23.5, "change": 22},
+    "TSLA": {"price": 378, "change": -3.1, "rsi_prev": 53.5, "rsi_current": 48, "volume": 12000000000, "sentiment": "Negative", "driver": "Tech risk-off and broader market weakness"},
+    "NVDA": {"price": 156, "change": -4.3, "rsi_prev": 24.9, "rsi_current": 25, "volume": 39000000000, "sentiment": "Negative", "driver": "Pre-earnings selling and China concerns after CEO transition; high volume"}
   },
   "crypto": {
-    "total_mcap": 2.19,
-    "TOTAL3": 0.667,
-    "BTC.D": 59.4,
-    "USDT.D": 8.0,
+    "total_mcap": 2.21,
+    "TOTAL3": 0.696,
+    "BTC.D": 58.7,
+    "USDT.D": 7.9,
     "USDC.D": 3.1,
-    "OTHERS": 30.5,
-    "ETHBTC": 0.0281,
-    "BTC": {"price": 64750, "change": -1.5, "rsi_prev": 24.5, "rsi_current": 22.0, "volume_total": 49.0, "volume_onchain": 15.0, "volume_perps": 34.0, "sentiment": "Negative", "driver": "Extreme fear risk-off with equities; oversold"},
-    "ETH": {"price": 1815, "change": -1.2, "rsi_prev": 24.3, "rsi_current": 23.5, "volume_total": 19.3, "volume_onchain": 6.0, "volume_perps": 13.3, "sentiment": "Negative", "driver": "Tracking BTC lower; deep oversold"},
-    "SOL": {"price": 71.2, "change": -1.5, "rsi_prev": 19.4, "rsi_current": 18.5, "volume_total": 5.0, "volume_onchain": 1.5, "volume_perps": 3.5, "sentiment": "Negative", "driver": "Alt weakness continues; RSI extreme"},
-    "SUI": {"price": 0.72, "change": -1.5, "rsi_prev": 35, "rsi_current": 30, "volume_total": 0.53, "volume_onchain": 0.17, "volume_perps": 0.36, "sentiment": "Negative", "driver": "Following alts lower into oversold"},
-    "SEI": {"price": 0.0394, "change": 1.0, "rsi_prev": 36, "rsi_current": 25, "volume_total": 0.09, "volume_onchain": 0.01, "volume_perps": 0.08, "sentiment": "Neutral", "driver": "Bounce on low volume; still oversold"}
+    "OTHERS": 31.4,
+    "ETHBTC": 0.028,
+    "BTC": {"price": 64900, "change": -0.2, "rsi_prev": 22, "rsi_current": 24, "volume_total": 33, "volume_onchain": 5, "volume_perps": 40, "sentiment": "Negative", "driver": "Extreme fear and equity spillover; oversold"},
+    "ETH": {"price": 1815, "change": -0.5, "rsi_prev": 23.5, "rsi_current": 26, "volume_total": 12, "volume_onchain": 2, "volume_perps": 10, "sentiment": "Negative", "driver": "Tracking BTC; deep oversold"},
+    "SOL": {"price": 71.1, "change": -0.7, "rsi_prev": 18.5, "rsi_current": 21, "volume_total": 2.6, "volume_onchain": 0.5, "volume_perps": 2, "sentiment": "Negative", "driver": "Alt weakness; RSI extreme oversold"},
+    "SUI": {"price": 0.72, "change": -0.6, "rsi_prev": 30, "rsi_current": 30, "volume_total": 0.25, "volume_onchain": 0.05, "volume_perps": 0.2, "sentiment": "Negative", "driver": "Following alts lower into oversold"},
+    "SEI": {"price": 0.039, "change": -0.6, "rsi_prev": 25, "rsi_current": 30, "volume_total": 0.02, "volume_onchain": 0.004, "volume_perps": 0.05, "sentiment": "Neutral", "driver": "Low volume; still oversold"}
   },
-  "takeaways": ["NVDA oversold RSI ~25 with extreme volume ahead of Nov 17 earnings after CEO exit", "Crypto extreme fear; BTC/ETH/SOL daily RSI deeply oversold under 25", "Risk-off mood with VIX +3.2%; tech lagging"]
+  "takeaways": ["NVDA -4.3% with high volume and extreme options ahead of Nov 17 earnings", "Crypto extreme fear with BTC/ETH/SOL daily RSI deeply oversold under 30", "Risk-off: VIX +22%, tech/chip led selloff"]
 }
