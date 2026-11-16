@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-16",
+  "mood": "risk-off",
+  "stocks": {
+    "SPX": {"price": 7425, "change": -1.8},
+    "SPY": {"price": 740, "change": -1.9},
+    "QQQ": {"price": 663, "change": -2.5},
+    "VIX": {"price": 23.5, "change": 22},
+    "TSLA": {"price": 378, "change": -3.1, "rsi_prev": 53.5, "rsi_current": 48, "volume": 12000000000, "sentiment": "Negative", "driver": "Tech risk-off and broader market weakness"},
+    "NVDA": {"price": 156, "change": -4.3, "rsi_prev": 24.9, "rsi_current": 25, "volume": 39000000000, "sentiment": "Negative", "driver": "Pre-earnings selling and China concerns after CEO transition; high volume"}
+  },
+  "crypto": {
+    "total_mcap": 2.21,
+    "TOTAL3": 0.696,
+    "BTC.D": 58.7,
+    "USDT.D": 7.9,
+    "USDC.D": 3.1,
+    "OTHERS": 31.4,
+    "ETHBTC": 0.028,
+    "BTC": {"price": 64900, "change": -0.2, "rsi_prev": 22, "rsi_current": 24, "volume_total": 33, "volume_onchain": 5, "volume_perps": 40, "sentiment": "Negative", "driver": "Extreme fear and equity spillover; oversold"},
+    "ETH": {"price": 1815, "change": -0.5, "rsi_prev": 23.5, "rsi_current": 26, "volume_total": 12, "volume_onchain": 2, "volume_perps": 10, "sentiment": "Negative", "driver": "Tracking BTC; deep oversold"},
+    "SOL": {"price": 71.1, "change": -0.7, "rsi_prev": 18.5, "rsi_current": 21, "volume_total": 2.6, "volume_onchain": 0.5, "volume_perps": 2, "sentiment": "Negative", "driver": "Alt weakness; RSI extreme oversold"},
+    "SUI": {"price": 0.72, "change": -0.6, "rsi_prev": 30, "rsi_current": 30, "volume_total": 0.25, "volume_onchain": 0.05, "volume_perps": 0.2, "sentiment": "Negative", "driver": "Following alts lower into oversold"},
+    "SEI": {"price": 0.039, "change": -0.6, "rsi_prev": 25, "rsi_current": 30, "volume_total": 0.02, "volume_onchain": 0.004, "volume_perps": 0.05, "sentiment": "Neutral", "driver": "Low volume; still oversold"}
+  },
+  "takeaways": ["NVDA -4.3% with high volume and extreme options ahead of Nov 17 earnings", "Crypto extreme fear with BTC/ETH/SOL daily RSI deeply oversold under 30", "Risk-off: VIX +22%, tech/chip led selloff"]
+}
