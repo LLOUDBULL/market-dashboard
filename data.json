@@ -1,27 +1,27 @@
 {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "mood": "risk-off",
   "stocks": {
-    "SPX": {"price": 7425, "change": -1.8},
-    "SPY": {"price": 740, "change": -1.9},
-    "QQQ": {"price": 663, "change": -2.5},
-    "VIX": {"price": 23.5, "change": 22},
-    "TSLA": {"price": 378, "change": -3.1, "rsi_prev": 53.5, "rsi_current": 48, "volume": 12000000000, "sentiment": "Negative", "driver": "Tech risk-off and broader market weakness"},
-    "NVDA": {"price": 156, "change": -4.3, "rsi_prev": 24.9, "rsi_current": 25, "volume": 39000000000, "sentiment": "Negative", "driver": "Pre-earnings selling and China concerns after CEO transition; high volume"}
+    "SPX": {"price": 7305, "change": -1.5},
+    "SPY": {"price": 730.5, "change": -1.3},
+    "QQQ": {"price": 653, "change": -1.4},
+    "VIX": {"price": 26.5, "change": 15},
+    "TSLA": {"price": 379.5, "change": -0.1, "rsi_prev": 49.5, "rsi_current": 49, "volume": 7000000000, "sentiment": "Neutral", "driver": "Flat amid broad market selloff"},
+    "NVDA": {"price": 153, "change": -2.0, "rsi_prev": 22.7, "rsi_current": 22, "volume": 37000000000, "sentiment": "Negative", "driver": "Pre-earnings selling on AI/China concerns; elevated volume"}
   },
   "crypto": {
-    "total_mcap": 2.21,
+    "total_mcap": 2.17,
     "TOTAL3": 0.696,
-    "BTC.D": 58.7,
-    "USDT.D": 7.9,
-    "USDC.D": 3.1,
-    "OTHERS": 31.4,
-    "ETHBTC": 0.028,
-    "BTC": {"price": 64900, "change": -0.2, "rsi_prev": 22, "rsi_current": 24, "volume_total": 33, "volume_onchain": 5, "volume_perps": 40, "sentiment": "Negative", "driver": "Extreme fear and equity spillover; oversold"},
-    "ETH": {"price": 1815, "change": -0.5, "rsi_prev": 23.5, "rsi_current": 26, "volume_total": 12, "volume_onchain": 2, "volume_perps": 10, "sentiment": "Negative", "driver": "Tracking BTC; deep oversold"},
-    "SOL": {"price": 71.1, "change": -0.7, "rsi_prev": 18.5, "rsi_current": 21, "volume_total": 2.6, "volume_onchain": 0.5, "volume_perps": 2, "sentiment": "Negative", "driver": "Alt weakness; RSI extreme oversold"},
-    "SUI": {"price": 0.72, "change": -0.6, "rsi_prev": 30, "rsi_current": 30, "volume_total": 0.25, "volume_onchain": 0.05, "volume_perps": 0.2, "sentiment": "Negative", "driver": "Following alts lower into oversold"},
-    "SEI": {"price": 0.039, "change": -0.6, "rsi_prev": 25, "rsi_current": 30, "volume_total": 0.02, "volume_onchain": 0.004, "volume_perps": 0.05, "sentiment": "Neutral", "driver": "Low volume; still oversold"}
+    "BTC.D": 58.5,
+    "USDT.D": 8.1,
+    "USDC.D": 3.2,
+    "OTHERS": 31.7,
+    "ETHBTC": 0.0281,
+    "BTC": {"price": 63700, "change": -2.0, "rsi_prev": 24, "rsi_current": 24, "volume_total": 34, "volume_onchain": 5, "volume_perps": 40, "sentiment": "Negative", "driver": "Extreme fear and equity spillover; oversold"},
+    "ETH": {"price": 1790, "change": -1.8, "rsi_prev": 25, "rsi_current": 25, "volume_total": 11, "volume_onchain": 2, "volume_perps": 10, "sentiment": "Negative", "driver": "Tracking BTC lower; deep oversold"},
+    "SOL": {"price": 72.7, "change": 1.7, "rsi_prev": 21, "rsi_current": 21, "volume_total": 2.9, "volume_onchain": 0.5, "volume_perps": 2.5, "sentiment": "Positive", "driver": "Relative strength amid alt weakness; still oversold"},
+    "SUI": {"price": 0.72, "change": -0.6, "rsi_prev": 32, "rsi_current": 32, "volume_total": 0.27, "volume_onchain": 0.05, "volume_perps": 0.2, "sentiment": "Neutral", "driver": "Mild decline with market"},
+    "SEI": {"price": 0.0389, "change": -1.0, "rsi_prev": 26, "rsi_current": 26, "volume_total": 0.021, "volume_onchain": 0.004, "volume_perps": 0.04, "sentiment": "Negative", "driver": "Low volume; oversold near ATL"}
   },
-  "takeaways": ["NVDA -4.3% with high volume and extreme options ahead of Nov 17 earnings", "Crypto extreme fear with BTC/ETH/SOL daily RSI deeply oversold under 30", "Risk-off: VIX +22%, tech/chip led selloff"]
+  "takeaways": ["NVDA -2% with RSI ~22 oversold and high volume/options ahead of earnings after close", "Risk-off mood: VIX +15%, equities and crypto lower amid extreme fear", "SOL relative strength while most alts lag"]
 }
