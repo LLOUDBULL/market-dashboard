@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-19",
+  "mood": "risk-off",
+  "stocks": {
+    "SPX": {"price": 7186, "change": -1.9},
+    "SPY": {"price": 719, "change": -1.6},
+    "QQQ": {"price": 648, "change": -1.7},
+    "VIX": {"price": 27.7, "change": 13.0},
+    "TSLA": {"price": 375, "change": -2.3, "rsi_prev": 51, "rsi_current": 49, "volume": 8000000000, "sentiment": "Negative", "driver": "Broad selloff as Anthropic IPO failed to lift AI sentiment"},
+    "NVDA": {"price": 147, "change": -2.6, "rsi_prev": 21, "rsi_current": 21, "volume": 36000000000, "sentiment": "Negative", "driver": "High-volume decline amid AI skepticism post-Anthropic debut"}
+  },
+  "crypto": {
+    "total_mcap": 2.17,
+    "TOTAL3": 0.697,
+    "BTC.D": 58.1,
+    "USDT.D": 8.0,
+    "USDC.D": 3.1,
+    "OTHERS": 32.0,
+    "ETHBTC": 0.0286,
+    "BTC": {"price": 62100, "change": -0.7, "rsi_prev": 23, "rsi_current": 22, "volume_total": 32, "volume_onchain": 5, "volume_perps": 30, "sentiment": "Negative", "driver": "Soft amid equity risk-off"},
+    "ETH": {"price": 1775, "change": 0.8, "rsi_prev": 25, "rsi_current": 24, "volume_total": 10.5, "volume_onchain": 2, "volume_perps": 9, "sentiment": "Neutral", "driver": "Relative strength vs BTC"},
+    "SOL": {"price": 73.7, "change": 0.7, "rsi_prev": 28, "rsi_current": 28, "volume_total": 2.1, "volume_onchain": 0.4, "volume_perps": 1.8, "sentiment": "Neutral", "driver": "Holding up with mild gains"},
+    "SUI": {"price": 0.716, "change": -0.5, "rsi_prev": 33, "rsi_current": 33, "volume_total": 0.23, "volume_onchain": 0.04, "volume_perps": 0.15, "sentiment": "Neutral", "driver": "Slight dip in low volume"},
+    "SEI": {"price": 0.0383, "change": -1.4, "rsi_prev": 32, "rsi_current": 31, "volume_total": 0.012, "volume_onchain": 0.002, "volume_perps": 0.02, "sentiment": "Negative", "driver": "Continued weakness"}
+  },
+  "takeaways": ["Anthropic IPO debut failed to revive AI enthusiasm, driving risk-off with VIX +13% to 27.7", "NVDA -2.6% on high volume (~$36B) with RSI ~21 deep oversold", "Crypto mixed: BTC soft, ETH relative strength"]
+}
