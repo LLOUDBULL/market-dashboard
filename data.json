@@ -1,27 +1,27 @@
 {
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "mood": "risk-off",
   "stocks": {
-    "SPX": {"price": 6910, "change": -3.70},
-    "SPY": {"price": 690, "change": -3.65},
-    "QQQ": {"price": 608, "change": -5.67},
+    "SPX": {"price": 6910.39, "change": -3.70},
+    "SPY": {"price": 690.87, "change": -3.65},
+    "QQQ": {"price": 609.88, "change": -5.45},
     "VIX": {"price": 35.89, "change": 26.20},
     "TSLA": {"price": 345.82, "change": -7.64, "rsi_prev": 42, "rsi_current": 38, "volume": 15900000000, "sentiment": "Negative", "driver": "Heavy selling on broad tech weakness and demand concerns"},
-    "NVDA": {"price": 125.53, "change": -14.01, "rsi_prev": 25, "rsi_current": 15, "volume": 79000000000, "sentiment": "Negative", "driver": "Plunged in AI trade unwind amid tech selloff"}
+    "NVDA": {"price": 125.53, "change": -14.01, "rsi_prev": 25, "rsi_current": 15, "volume": 79000000000, "sentiment": "Negative", "driver": "Plunged in AI trade unwind amid tech selloff and probe reports"}
   },
   "crypto": {
-    "total_mcap": 2.08,
-    "TOTAL3": 0.66,
-    "BTC.D": 58.0,
+    "total_mcap": 2.07,
+    "TOTAL3": 0.64,
+    "BTC.D": 58.7,
     "USDT.D": 8.4,
     "USDC.D": 3.3,
-    "OTHERS": 32.2,
-    "ETHBTC": 0.028,
-    "BTC": {"price": 60180, "change": 3.97, "rsi_prev": 18, "rsi_current": 23, "volume_total": 62, "volume_onchain": 8, "volume_perps": 45, "sentiment": "Neutral", "driver": "Bounce after equity risk-off into extreme fear"},
-    "ETH": {"price": 1682, "change": 5.88, "rsi_prev": 20, "rsi_current": 26, "volume_total": 22, "volume_onchain": 3, "volume_perps": 16, "sentiment": "Neutral", "driver": "Outperformed BTC in weekend rebound"},
-    "SOL": {"price": 70.55, "change": 4.29, "rsi_prev": 24, "rsi_current": 27, "volume_total": 4.2, "volume_onchain": 0.6, "volume_perps": 2.8, "sentiment": "Neutral", "driver": "Tracked majors higher after selloff"},
-    "SUI": {"price": 0.646, "change": 0.80, "rsi_prev": 32, "rsi_current": 28, "volume_total": 0.41, "volume_onchain": 0.05, "volume_perps": 0.25, "sentiment": "Negative", "driver": "Lagged in altcoin recovery attempt"},
-    "SEI": {"price": 0.0344, "change": -0.15, "rsi_prev": 31, "rsi_current": 27, "volume_total": 0.022, "volume_onchain": 0.003, "volume_perps": 0.015, "sentiment": "Negative", "driver": "Continued drift lower near lows"}
+    "OTHERS": 31.2,
+    "ETHBTC": 0.0282,
+    "BTC": {"price": 60657, "change": 0.67, "rsi_prev": 23, "rsi_current": 24, "volume_total": 29, "volume_onchain": 4, "volume_perps": 20, "sentiment": "Neutral", "driver": "Modest weekend bounce after equity risk-off into extreme fear"},
+    "ETH": {"price": 1713, "change": 1.77, "rsi_prev": 26, "rsi_current": 27, "volume_total": 7.8, "volume_onchain": 1.2, "volume_perps": 5.5, "sentiment": "Neutral", "driver": "Outperformed BTC slightly in weekend rebound"},
+    "SOL": {"price": 70.21, "change": -0.29, "rsi_prev": 27, "rsi_current": 28, "volume_total": 1.8, "volume_onchain": 0.3, "volume_perps": 1.2, "sentiment": "Neutral", "driver": "Largely flat, lagging majors"},
+    "SUI": {"price": 0.657, "change": 1.3, "rsi_prev": 28, "rsi_current": 29, "volume_total": 0.18, "volume_onchain": 0.02, "volume_perps": 0.12, "sentiment": "Neutral", "driver": "Mild bounce from oversold levels"},
+    "SEI": {"price": 0.0344, "change": 0.2, "rsi_prev": 27, "rsi_current": 26, "volume_total": 0.009, "volume_onchain": 0.001, "volume_perps": 0.042, "sentiment": "Negative", "driver": "Low volume drift near lows"}
   },
-  "takeaways": ["NVDA -14% on extreme volume (~$79B) and RSI ~15 as AI trade unwound; VIX +26% to 36", "Broad risk-off: SPX -3.7%, QQQ -5.7%, tech leading the dump into correction", "Crypto bounced: total mcap ~$2.08T, BTC +4% into extreme fear"]
+  "takeaways": ["NVDA -14% on extreme volume (~$79B) and RSI ~15 as AI trade unwound; VIX +26% to 36", "Broad risk-off Friday: SPX -3.7%, QQQ -5.5%, tech leading into correction", "Crypto mixed-to-up over weekend: total mcap ~$2.07T, BTC +0.7% in extreme fear"]
 }
