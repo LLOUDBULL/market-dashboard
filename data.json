@@ -1,27 +1,27 @@
 {
-  "date": "2026-11-23",
-  "mood": "risk-on",
+  "date": "2026-11-24",
+  "mood": "risk-off",
   "stocks": {
-    "SPX": {"price": 7255, "change": 5.0},
-    "SPY": {"price": 723, "change": 4.7},
-    "QQQ": {"price": 650, "change": 6.8},
-    "VIX": {"price": 27.4, "change": -23.5},
-    "TSLA": {"price": 387, "change": 12.1, "rsi_prev": 38, "rsi_current": 53, "volume": 12000000000, "sentiment": "Positive", "driver": "Autonomy optimism and broad tech rebound after Friday selloff"},
-    "NVDA": {"price": 164.5, "change": 31.0, "rsi_prev": 15, "rsi_current": 42, "volume": 95000000000, "sentiment": "Positive", "driver": "Board reinstates Jensen Huang as CEO; largest single-day market cap gain on record"}
+    "SPX": {"price": 7175, "change": -0.9},
+    "SPY": {"price": 717, "change": -0.7},
+    "QQQ": {"price": 636, "change": -2.2},
+    "VIX": {"price": 27.1, "change": 1.7},
+    "TSLA": {"price": 384, "change": -0.4, "rsi_prev": 52, "rsi_current": 51, "volume": 7000000000, "sentiment": "Neutral", "driver": "Mild pullback after prior strong session; no major new catalyst"},
+    "NVDA": {"price": 152.5, "change": -7.6, "rsi_prev": 43, "rsi_current": 39, "volume": 32000000000, "sentiment": "Negative", "driver": "Profit-taking after yesterday's +31% Huang reinstatement surge; elevated volume"}
   },
   "crypto": {
-    "total_mcap": 2.13,
-    "TOTAL3": 0.66,
-    "BTC.D": 58.0,
-    "USDT.D": 8.2,
-    "USDC.D": 3.2,
-    "OTHERS": 32.0,
-    "ETHBTC": 0.0283,
-    "BTC": {"price": 61400, "change": 1.0, "rsi_prev": 24, "rsi_current": 32, "volume_total": 40, "volume_onchain": 5, "volume_perps": 25, "sentiment": "Neutral", "driver": "Modest follow-through after equity bounce; still in extreme fear"},
-    "ETH": {"price": 1735, "change": 1.3, "rsi_prev": 27, "rsi_current": 35, "volume_total": 12, "volume_onchain": 1.5, "volume_perps": 8, "sentiment": "Neutral", "driver": "Slight outperformance vs BTC in rebound"},
-    "SOL": {"price": 73.2, "change": 4.0, "rsi_prev": 28, "rsi_current": 34, "volume_total": 3.5, "volume_onchain": 0.4, "volume_perps": 2.0, "sentiment": "Neutral", "driver": "Stronger bounce from oversold levels"},
-    "SUI": {"price": 0.685, "change": 4.2, "rsi_prev": 29, "rsi_current": 36, "volume_total": 0.28, "volume_onchain": 0.03, "volume_perps": 0.18, "sentiment": "Neutral", "driver": "Following broader alt recovery"},
-    "SEI": {"price": 0.0350, "change": 1.7, "rsi_prev": 26, "rsi_current": 28, "volume_total": 0.025, "volume_onchain": 0.002, "volume_perps": 0.08, "sentiment": "Neutral", "driver": "Low-volume drift higher near range lows"}
+    "total_mcap": 2.07,
+    "TOTAL3": 0.67,
+    "BTC.D": 57.8,
+    "USDT.D": 8.4,
+    "USDC.D": 3.3,
+    "OTHERS": 32.3,
+    "ETHBTC": 0.0280,
+    "BTC": {"price": 59600, "change": -2.6, "rsi_prev": 27, "rsi_current": 27, "volume_total": 31, "volume_onchain": 4, "volume_perps": 20, "sentiment": "Negative", "driver": "Risk-off follow-through; extreme fear persists"},
+    "ETH": {"price": 1670, "change": -3.3, "rsi_prev": 29, "rsi_current": 28, "volume_total": 11.5, "volume_onchain": 1.2, "volume_perps": 7, "sentiment": "Negative", "driver": "Underperforming BTC amid broader weakness"},
+    "SOL": {"price": 69, "change": -5.5, "rsi_prev": 31, "rsi_current": 29, "volume_total": 2.7, "volume_onchain": 0.3, "volume_perps": 1.8, "sentiment": "Negative", "driver": "Larger drop from oversold levels"},
+    "SUI": {"price": 0.643, "change": -5.3, "rsi_prev": 33, "rsi_current": 30, "volume_total": 0.27, "volume_onchain": 0.03, "volume_perps": 0.17, "sentiment": "Negative", "driver": "Following altcoin weakness"},
+    "SEI": {"price": 0.033, "change": -5.5, "rsi_prev": 26, "rsi_current": 25, "volume_total": 0.026, "volume_onchain": 0.002, "volume_perps": 0.06, "sentiment": "Negative", "driver": "Continued drift lower near range lows"}
   },
-  "takeaways": ["NVDA +31% on extreme volume (~$95B) as Jensen Huang returns as CEO; biggest single-day market-cap gain ever", "Risk-on bounce: SPX +5%, QQQ +6.8%, VIX -23.5% after Friday's tech-led selloff", "Crypto muted relative to equities: total mcap ~$2.13T, BTC +1% still in extreme fear"]
+  "takeaways": ["NVDA -7.6% on elevated volume after yesterday's record surge; main driver of tech/QQQ weakness", "Risk-off: SPX -0.9%, QQQ -2.2%, VIX ~27 as markets digest Huang news", "Crypto continues lower: total mcap ~$2.07T (-5%), extreme fear, BTC -2.6%"]
 }
