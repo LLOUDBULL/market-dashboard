@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-26",
+  "mood": "risk-off",
+  "stocks": {
+    "SPX": {"price": 7183, "change": -0.25},
+    "SPY": {"price": 716.70, "change": -0.29},
+    "QQQ": {"price": 633.93, "change": -0.65},
+    "VIX": {"price": 26.80, "change": -5.27},
+    "TSLA": {"price": 380.14, "change": -1.18, "rsi_prev": 51, "rsi_current": 50.3, "volume": 13300000000, "sentiment": "Neutral", "driver": "Mild pullback after volatile session; no major new catalyst"},
+    "NVDA": {"price": 149.30, "change": -3.91, "rsi_prev": 40, "rsi_current": 37.5, "volume": 54000000000, "sentiment": "Negative", "driver": "Continued AI profit-taking after prior rebound; high volume"}
+  },
+  "crypto": {
+    "total_mcap": 2.07,
+    "TOTAL3": 0.647,
+    "BTC.D": 58.7,
+    "USDT.D": 8.4,
+    "USDC.D": 3.3,
+    "OTHERS": 0.175,
+    "ETHBTC": 0.0281,
+    "BTC": {"price": 60500, "change": 1.0, "rsi_prev": 27, "rsi_current": 28, "volume_total": 25, "volume_onchain": 4, "volume_perps": 18, "sentiment": "Neutral", "driver": "Modest bounce amid extreme fear; oversold conditions"},
+    "ETH": {"price": 1700, "change": 0.9, "rsi_prev": 28, "rsi_current": 29, "volume_total": 9, "volume_onchain": 1, "volume_perps": 6, "sentiment": "Neutral", "driver": "Tracking BTC higher; still lagging broader recovery"},
+    "SOL": {"price": 71.3, "change": 2.0, "rsi_prev": 33, "rsi_current": 35, "volume_total": 2.1, "volume_onchain": 0.3, "volume_perps": 1.5, "sentiment": "Positive", "driver": "Relative strength vs majors on lighter volume"},
+    "SUI": {"price": 0.67, "change": 2.0, "rsi_prev": 33, "rsi_current": 34, "volume_total": 0.3, "volume_onchain": 0.03, "volume_perps": 0.2, "sentiment": "Neutral", "driver": "Mild altcoin follow-through; still range-bound"},
+    "SEI": {"price": 0.040, "change": 23.0, "rsi_prev": 26, "rsi_current": 40, "volume_total": 0.07, "volume_onchain": 0.005, "volume_perps": 0.04, "sentiment": "Positive", "driver": "Sharp rebound from oversold daily levels; volume spike"}
+  },
+  "takeaways": ["NVDA -3.9% on elevated volume drove tech/QQQ weakness after AI profit-taking; SPX/Dow mixed", "Crypto modest bounce (total mcap +1%) with SEI the clear outlier (+23% on volume spike)", "VIX cooled ~5% into holiday close; markets closed Thanksgiving"]
+}
