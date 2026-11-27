@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-27",
+  "mood": "risk-on",
+  "stocks": {
+    "SPX": {"price": 7297, "change": 1.60},
+    "SPY": {"price": 728.32, "change": 1.62},
+    "QQQ": {"price": 650.99, "change": 2.69},
+    "VIX": {"price": 23.81, "change": -11.16},
+    "TSLA": {"price": 400.00, "change": 5.22, "rsi_prev": 50, "rsi_current": 56, "volume": 10300000000, "sentiment": "Positive", "driver": "Strong rebound on AI optimism and holiday short-covering; leading mega-caps"},
+    "NVDA": {"price": 150.49, "change": 0.80, "rsi_prev": 37, "rsi_current": 38, "volume": 27200000000, "sentiment": "Neutral", "driver": "Modest gain amid broader tech rebound; still well below recent highs with high volume"}
+  },
+  "crypto": {
+    "total_mcap": 2.08,
+    "TOTAL3": 0.650,
+    "BTC.D": 58.0,
+    "USDT.D": 8.4,
+    "USDC.D": 3.3,
+    "OTHERS": 0.185,
+    "ETHBTC": 0.0279,
+    "BTC": {"price": 59950, "change": -1.0, "rsi_prev": 28, "rsi_current": 28, "volume_total": 30, "volume_onchain": 5, "volume_perps": 22, "sentiment": "Negative", "driver": "Lagging equity rebound; remains oversold in extreme fear zone"},
+    "ETH": {"price": 1672, "change": -1.7, "rsi_prev": 29, "rsi_current": 29, "volume_total": 11, "volume_onchain": 1.5, "volume_perps": 8, "sentiment": "Negative", "driver": "Underperforming BTC; ETF outflows continue to weigh"},
+    "SOL": {"price": 72.2, "change": 1.2, "rsi_prev": 33, "rsi_current": 34, "volume_total": 2.5, "volume_onchain": 0.4, "volume_perps": 1.8, "sentiment": "Neutral", "driver": "Relative strength vs majors; still below key averages"},
+    "SUI": {"price": 0.676, "change": 0.4, "rsi_prev": 34, "rsi_current": 36, "volume_total": 0.28, "volume_onchain": 0.03, "volume_perps": 0.2, "sentiment": "Neutral", "driver": "Quiet session; tracking broader altcoin softness"},
+    "SEI": {"price": 0.0383, "change": 2.0, "rsi_prev": 40, "rsi_current": 44, "volume_total": 0.03, "volume_onchain": 0.003, "volume_perps": 0.027, "sentiment": "Neutral", "driver": "Modest bounce; elevated futures volume relative to spot"}
+  },
+  "takeaways": ["Equities risk-on rebound: SPX +1.6%, QQQ +2.7%, VIX -11%; TSLA +5.2% leads mega-caps", "Crypto lags in extreme fear with BTC/ETH oversold near 28-29 RSI and total mcap flat-to-down", "Broad equity breadth strong; crypto volumes elevated but price action remains defensive"]
+}
